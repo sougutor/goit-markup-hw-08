@@ -60,6 +60,10 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 .contacts-list .link {
   font-weight: 500;
   font-size: 14px;
