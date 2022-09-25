@@ -68,7 +68,7 @@ img {
 /* ---------- HEARED ---------- */
 
 .header {
-  border-bottom: 1px solid #ECECEC;;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
@@ -403,6 +403,5 @@ img {
 }
 
 .portfolio-data {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
 }
