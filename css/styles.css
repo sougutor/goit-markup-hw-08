@@ -16,6 +16,8 @@
   --border-color: #eeeeee;
 
   --primary-icon-color: #afb1b8;
+  --secondary-icon-color: #ffffff;
+  --bg-icon-color: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -58,8 +60,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-  outline: 2px solid red;
 }
 
 .section {
@@ -381,6 +381,10 @@ img {
 
 /* ---------- ПОСТІЙНІ КЛІЄНТИ ---------- */
 
+.clients {
+  background-color: var(--primary-bg-color);
+}
+
 .clients-title {
   margin-bottom: 50px;
 
@@ -435,6 +439,13 @@ img {
   background-color: var(--secondary-bg-color);
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 70px;
+}
+
 .footer .logo {
   display: inline-block;
   margin-right: 0;
@@ -462,6 +473,48 @@ img {
 
 .address .contacts-link {
   color: var(--contacts-list-color);
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+
+  color: var(--secondary-text-color);
+}
+
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.footer-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  color: var(--secondary-icon-color);
+  background-color: var(--bg-icon-color);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-icon-color);
+}
+
+.footer-soc-icon {
+  fill: currentColor;
 }
 
 /* ---------- PORTFOLIO ---------- */
@@ -493,6 +546,9 @@ img {
 .portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--secondary-text-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -515,6 +571,12 @@ img {
   width: calc((100% - 60px) / 3);
 
   background-color: var(--primary-bg-color);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-text {
