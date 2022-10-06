@@ -288,7 +288,6 @@ img {
 
 .work-list {
   display: flex;
-  /* justify-content: space-between; */
   gap: 30px;
 }
 
@@ -297,6 +296,7 @@ img {
 .team {
   background-color: var(--third-bg-color);
 }
+
 .team-main-title {
   margin-bottom: 50px;
 
@@ -363,11 +363,9 @@ img {
   align-items: center;
   justify-content: center;
 
-
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: red;
   color: var(--primary-icon-color);
 }
 
@@ -381,7 +379,52 @@ img {
   fill: currentColor;
 }
 
+/* ---------- ПОСТІЙНІ КЛІЄНТИ ---------- */
 
+.clients-title {
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  color: var(--title-text-color);
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+  color: var(--primary-icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
 
 /* ---------- FOOTER ---------- */
 
