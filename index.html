@@ -29,9 +29,19 @@
           >
 
           <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="#" class="link">Контакти</a></li>
+            <li class="site-nav-item">
+              <a href="./index.html" class="site-nav-link link current"
+                >Студія</a
+              >
+            </li>
+            <li class="site-nav-item">
+              <a href="./portfolio.html" class="site-nav-link link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-nav-item">
+              <a href="#" class="site-nav-link link">Контакти</a>
+            </li>
           </ul>
         </nav>
 
@@ -58,7 +68,7 @@
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
 
-        <button type="button" class="hero-button button">
+        <button type="button" class="hero-button button" data-modal-open>
           Замовити послугу
         </button>
       </section>
@@ -131,29 +141,32 @@
           <h2 class="work-title">Чим ми займаємося</h2>
 
           <ul class="work-list list">
-            <li>
+            <li class="work-item">
               <img
                 src="./images/what-we-do-image-1.jpg"
                 alt="Програміст працює за столом"
                 width="370"
                 height="294"
               />
+              <p class="work-text">Десктопні додатки</p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/what-we-do-image-2.jpg"
                 alt="Дизайнер розробляє інтерфейс мобільного телефону"
                 width="370"
                 height="294"
               />
+              <p class="work-text">Мобільні додатки</p>
             </li>
-            <li>
+            <li class="work-item">
               <img
                 src="./images/what-we-do-image-3.jpg"
                 alt="Дизайнер підбирає колір на планшеті"
                 width="370"
                 height="294"
               />
+              <p class="work-text">Дизайнерські рішення</p>
             </li>
           </ul>
         </div>
@@ -439,5 +452,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button" data-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
