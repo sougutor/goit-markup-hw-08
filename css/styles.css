@@ -531,7 +531,6 @@ img {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
-  /* gap: 93px; */
 }
 
 .footer-addres-wrap {
@@ -567,10 +566,6 @@ img {
 
 .address .contacts-link {
   color: var(--contacts-list-color);
-}
-
-.footer-soc-wrap {
-  margin-right: 93px;
 }
 
 .footer-title {
@@ -622,6 +617,7 @@ img {
 .footer-form {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
 }
 
 .footer-mail-text {
@@ -877,8 +873,6 @@ img {
 }
 
 .modal-field {
-  /* display: flex;
-  flex-direction: column; */
   position: relative;
 
   margin-bottom: 10px;
