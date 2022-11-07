@@ -21,10 +21,10 @@
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--timing-function);
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .modal-button {
@@ -43,14 +43,14 @@
 
   background-color: var(--primary-bg-color);
   color: #000000;
-  
+
   cursor: pointer;
   transition: color 250ms var(--timing-function);
-}
 
-.modal-button:hover,
-.modal-button:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .modal-close-icon {
@@ -80,8 +80,8 @@
 }
 
 .modal-label {
-  display: block;
   position: relative;
+  display: block;
   margin-bottom: 10px;
 }
 
@@ -102,10 +102,9 @@
   fill: #212121;
 
   transition: fill 250ms var(--timing-function);
-}
-
-.modal-input:focus + .modal-user-icon {
-  fill: var(--accent-color);
+  .modal-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-input {
@@ -117,11 +116,11 @@
   padding: 12px 12px 12px 42px;
 
   transition: border-color 250ms var(--timing-function);
-}
 
-.modal-input:focus {
-  outline: transparent;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: transparent;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-comment {
@@ -133,21 +132,21 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
-}
 
-.modal-comment:focus {
-  outline: transparent;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: transparent;
+    border-color: var(--accent-color);
 
-  transition: border-color 250ms var(--timing-function);
-}
+    transition: border-color 250ms var(--timing-function);
+  }
 
-.modal-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 
-  color: rgba(117, 117, 117, 0.5);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .policy-text {
@@ -172,16 +171,16 @@
   transition: border-color 250ms var(--timing-function),
     fill 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
-}
 
-.policy-checkbox:checked + .policy-text > .checked-icon {
-  background-color: var(--accent-color);
-  border-color: transparent;
-  fill: var(--secondary-icon-color);
-}
+  .policy-checkbox:checked + .policy-text > & {
+    background-color: var(--accent-color);
+    border-color: transparent;
+    fill: var(--secondary-icon-color);
+  }
 
-.policy-checkbox:focus + .policy-text > .checked-icon {
-  border-color: var(--accent-color);
+  .policy-checkbox:focus + .policy-text > & {
+    border-color: var(--accent-color);
+  }
 }
 
 .user-policy {

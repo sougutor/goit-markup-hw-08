@@ -2,16 +2,16 @@
   padding-bottom: 0;
 }
 
-.features-list {
+.features__list {
   display: flex;
   gap: 30px;
 }
 
-.features-item {
+.features__item {
   width: calc((100% - 90px) / 4);
 }
 
-.fetures-item-icon {
+.features__icon {
   display: block;
   width: 270px;
   height: 120px;
@@ -22,7 +22,7 @@
   background-color: var(--third-bg-color);
 }
 
-.features-title {
+.features__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -31,50 +31,9 @@
   color: var(--title-text-color);
 }
 
-.features-text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
 
   color: var(--primary-text-color);
-}
-/* ---------- ЧИМ МИ ЗАЙМАЄМОСТЬ ---------- */
-
-.work-title {
-  margin-bottom: 50px;
-
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-
-  color: var(--title-text-color);
-}
-
-.work-list {
-  display: flex;
-  gap: 30px;
-}
-
-.work-item {
-  position: relative;
-}
-
-.work-text {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  width: 370px;
-  height: 70px;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
-
-  color: var(--secondary-text-color);
-  background-color: rgba(47, 48, 58, 0.8);
-
-  text-transform: uppercase;
 }

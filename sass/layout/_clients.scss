@@ -2,7 +2,7 @@
   background-color: var(--primary-bg-color);
 }
 
-.clients-title {
+.clients__title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -12,19 +12,19 @@
   color: var(--title-text-color);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
 
-.clients-item {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.clients-link {
+.clients__link {
   transition: color 250ms var(--timing-function),
     border 250ms var(--timing-function);
 
@@ -38,14 +38,14 @@
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   color: var(--primary-icon-color);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
-}
-
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }

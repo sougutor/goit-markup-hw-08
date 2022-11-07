@@ -19,7 +19,7 @@
   background-color: var(--secondary-bg-color);
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
 
   margin: 0 auto 30px;
@@ -34,7 +34,7 @@
   color: var(--secondary-text-color);
 }
 
-.hero-button {
+.hero__button {
   display: inline-block;
   padding: 10px 32px;
 
@@ -47,9 +47,9 @@
   background: var(--accent-color);
   color: var(--secondary-text-color);
   transition: background-color 250ms var(--timing-function);
-}
 
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--hero-btn-color);
+  &:hover,
+  &:focus {
+    background-color: var(--hero-btn-color);
+  }
 }

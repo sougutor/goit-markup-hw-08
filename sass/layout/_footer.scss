@@ -5,69 +5,65 @@
   background-color: var(--secondary-bg-color);
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
 }
 
-.footer-addres-wrap {
+.footer__wrap {
   margin-right: 70px;
 }
 
-.footer .logo {
-  display: inline-block;
-  margin-right: 0;
-  margin-bottom: 20px;
-
-  color: var(--secondary-text-color);
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.address .link {
+.address__link {
   transition: color 250ms var(--timing-function);
 
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address__link--lighter {
   color: var(--secondary-text-color);
 }
 
-.address .link:hover,
-.address .link:focus {
-  color: var(--accent-color);
-}
-
-.address .contacts-link {
+.address__link--darker {
   color: var(--contacts-list-color);
 }
 
-.footer-title {
+.footer__title {
   margin-bottom: 20px;
   font-size: 14px;
-  line-height: 1.17;
+  line-height: 1.14;
   font-weight: 700;
   text-transform: uppercase;
 
   color: var(--secondary-text-color);
 }
 
-.footer-soc-list {
+.footer-soc__list {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.footer-soc-item {
+.footer-soc__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-soc-link {
+.footer-soc__link {
   transition: color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
 
@@ -80,39 +76,29 @@
 
   color: var(--secondary-icon-color);
   background-color: var(--bg-icon-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-icon-color);
+  }
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--secondary-icon-color);
-}
-
-.footer-soc-icon {
+.footer-soc__icon {
   fill: currentColor;
 }
 
-.footer-form {
+.footer__form {
   display: flex;
   flex-direction: column;
   margin-left: auto;
 }
 
-.footer-mail-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: var(--secondary-text-color);
-
-  margin-bottom: 20px;
-}
-
-.footer-subscribe {
+.footer__subscribe {
   display: flex;
 }
 
-.footer-mail-field {
+.footer__mail-field {
   width: 358px;
   height: 50px;
 
@@ -130,7 +116,7 @@
   color: var(--secondary-text-color);
 }
 
-.footer-mail-button {
+.footer__mail-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,6 +139,6 @@
   outline: transparent;
 }
 
-.subscribe-icon {
+.footer__subscribe-icon {
   fill: currentColor;
 }
