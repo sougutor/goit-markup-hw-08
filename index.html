@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container container">
         <nav class="nav-container">
           <a href="./index.html" lang="en" class="logo link"
@@ -61,8 +61,80 @@
             >
           </li>
         </ul>
+
+        <button
+          type="button"
+          class="mob-menu__button--open button"
+          data-js-open-menu
+        >
+          <svg class="mob-menu__icon--open" width="40" height="40">
+            <use href="./images/icons.svg#mob-menu-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu is-open" data-js-menu-container>
+        <button
+          type="button"
+          class="mob-menu__button--close button"
+          data-js-close-menu
+        >
+          <svg class="mob-menu__icon--close" width="40" height="40">
+            <use href="./images/icons.svg#close-mob-icon"></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu--top">
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link link">Студія</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link link"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mob-menu__item">
+              <a href="#" class="mob-menu__link link">Контакти</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mob-menu--bottom">
+          <ul class="mob-contacts list">
+            <li class="mob-contacts__item">
+              <a
+                href="tel:+380961111111"
+                class="mob-contacts__link mob-contacts__link--accent link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-contacts__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mob-contacts__link mob-contacts__link--regular link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mob-soc__list list">
+            <li class="mob-soc__item">
+              <a href="#" class="mob-soc__link link">Instagram</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="#" class="mob-soc__link link">Twitter</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="#" class="mob-soc__link link">Facebook</a>
+            </li>
+            <li class="mob-soc__item">
+              <a href="#" class="mob-soc__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
@@ -134,27 +206,72 @@
 
           <ul class="work__list list">
             <li class="work__item">
-              <img
-                src="./images/what-we-do-image-1.jpg"
-                alt="Програміст працює за столом"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/what-we-do-image-1.webp    1x,
+                    ./images/work/what-we-do-image-1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/what-we-do-image-1.jpg    1x,
+                    ./images/work/what-we-do-image-1@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/work/what-we-do-image-1.jpg"
+                  alt="Програміст працює за столом"
+                  loading="lazy"
+                />
+              </picture>
               <p class="work__text">Десктопні додатки</p>
             </li>
             <li class="work__item">
-              <img
-                src="./images/what-we-do-image-2.jpg"
-                alt="Дизайнер розробляє інтерфейс мобільного телефону"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/what-we-do-image-2.webp    1x,
+                    ./images/work/what-we-do-image-2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/what-we-do-image-2.jpg    1x,
+                    ./images/work/what-we-do-image-2@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/work/what-we-do-image-2.jpg"
+                  alt="Дизайнер розробляє інтерфейс мобільного телефону"
+                  loading="lazy"
+                />
+              </picture>
               <p class="work__text">Мобільні додатки</p>
             </li>
             <li class="work__item">
-              <img
-                src="./images/what-we-do-image-3.jpg"
-                alt="Дизайнер підбирає колір на планшеті"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work/what-we-do-image-3.webp    1x,
+                    ./images/work/what-we-do-image-3@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/work/what-we-do-image-3.jpg    1x,
+                    ./images/work/what-we-do-image-3@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/work/what-we-do-image-3.jpg"
+                  alt="Дизайнер підбирає колір на планшеті"
+                  loading="lazy"
+                />
+              </picture>
               <p class="work__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -754,6 +871,7 @@
       </div>
     </div>
 
+    <script src="./js/mob-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
